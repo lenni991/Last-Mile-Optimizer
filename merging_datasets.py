@@ -6,7 +6,7 @@ def merge_datasets(folder_path, files, output_file):
         if not os.path.exists(folder_path):
             raise FileNotFoundError(f"Folder not found: {folder_path}")
         
-        dataframes = []  # to hold dataframes
+        dataframes = []
         
         for file in files:
             file_path = os.path.join(folder_path, file)
